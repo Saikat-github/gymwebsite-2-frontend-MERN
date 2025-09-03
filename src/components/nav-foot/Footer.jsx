@@ -1,4 +1,5 @@
 import { Instagram, Twitter, Facebook, Dumbbell } from 'lucide-react'
+import conf from '../../conf/conf';
 
 
 
@@ -41,7 +42,7 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-gray-700 mt-8 pt-8 text-center text-xs flex flex-col gap-2 items-center">
-          <a href="https://gymwebsite-1-admin.vercel.app"
+          <a href={`${conf.adminUrl}`}
             target='_blank'
             rel="noopener noreferrer"
             className='text-blue-600'>Go to admin panel</a>
